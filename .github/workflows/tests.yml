@@ -10,7 +10,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build: Javascript Tests
+  build: 
+    name: javascript tests
 
     runs-on: ubuntu-latest
 
