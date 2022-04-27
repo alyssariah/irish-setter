@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: navigation
+name: Navigation
+propagationMethod: all
+siteSettings:
+  ad8ea068-96be-4cc9-8890-6cec3a8cb753: # Irish Bitch
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: c5f8b34c-a572-4195-b43a-ca6d138dee18
+type: structure

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: homePage
+name: 'Home Page'
+propagationMethod: all
+siteSettings:
+  ad8ea068-96be-4cc9-8890-6cec3a8cb753: # Irish Bitch
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single

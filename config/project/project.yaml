@@ -1,0 +1,45 @@
+dateModified: 1642689475
+email:
+  fromEmail: admin@gmail.com
+  fromName: 'Irish Bitch'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1a083d97-75e7-4533-b0db-5ca553fb5389: Default # Default
+    2bc52acb-3878-417a-8d58-08b62009df25: 'Home Image' # Home Image
+    2ffc7e20-9595-43c8-b45a-8a9e783a3769: Common # Common
+    5f56c352-d61d-4801-8e3e-742c8b197e96: 'Text Details' # Text Details
+    7b004f71-bc62-400b-8d7e-00ff91df79e3: Images # Images
+    22ce01ad-d01b-410b-98c5-c5cc7fe3b8e8: Blog # Blog
+    44c08098-17b5-470f-9969-9b2229c90833: 'Blog Category' # Blog Category
+    264e01a3-bd4b-44da-8657-c5dcf58c1c48: 'Blog Images' # Blog Images
+    811cf356-e2cd-4038-bb56-218c4fc14b91: 'Text Content' # Text Content
+    895a91ab-ab3e-451d-b536-65d698488b80: 'Blog Categories' # Blog Categories
+    8917e4fa-9aa5-4cad-a6c5-2159fa96a9a2: 'Home Page' # Home Page
+    46478aa3-b4cc-45e1-a4ab-635f317c2edd: 'Rich Text' # Rich Text
+    68553d85-db8a-4e01-82d5-16040eb2d58a: Default # Default
+    99852dcb-7917-4dd5-86c0-2022d18df1aa: Blog # Blog
+    6803263d-7e9d-43b9-b9d0-da59a92d4e96: Navigation # Navigation
+    a96e85d9-ac1c-4a2b-a0d0-68f6bd2b2417: 'Blog Content' # Blog Content
+    ad8ea068-96be-4cc9-8890-6cec3a8cb753: 'Irish Bitch' # Irish Bitch
+    c5cb90d3-fe08-4f5f-8aa6-abf6603f2709: Image # Image
+    ccb78a3b-6b2b-4e17-8832-f08c2d54f694: 'Irish Bitch' # Irish Bitch
+    e113b1d5-7070-413b-9a10-83c3596af81f: 'Home Page' # Home Page
+    f6bcd899-17ff-4853-b989-19031fd45a68: Home # Home
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'Irish Bitch'
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

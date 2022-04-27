@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Irish Bitch'
+primary: true
+siteGroup: ccb78a3b-6b2b-4e17-8832-f08c2d54f694 # Irish Bitch
+sortOrder: 1
