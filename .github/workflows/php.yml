@@ -11,6 +11,8 @@ permissions:
 
 jobs:
   build:
+  
+    name: run php tests
 
     runs-on: ubuntu-latest
     
