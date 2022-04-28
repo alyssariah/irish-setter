@@ -26,7 +26,7 @@ jobs:
       run:  nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub /dev/null 2>&1 &
        
     - name: Run test cases
-      run:  php vendor/bin/codecept run acceptance --steps
+      run:  php vendor/bin/codecept run --steps
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
