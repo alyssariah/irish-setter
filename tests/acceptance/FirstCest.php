@@ -14,6 +14,6 @@ class FirstCest
     public function frontpageWorks(AcceptanceTester $I)
     {
         $I->amOnPage('/');
-        $I->see('Not here');
+        $I->see('Get the ARKH App');
     }
 }
