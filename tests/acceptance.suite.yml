@@ -8,6 +8,6 @@ actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://arkh.local
+            url: https://arkh.com
         - \Helper\Acceptance
 step_decorators: ~        
