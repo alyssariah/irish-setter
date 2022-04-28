@@ -1,4 +1,4 @@
-name: Run Codeception test cases
+name: Php test
 
 on:
   push:
@@ -11,14 +11,13 @@ permissions:
 
 jobs:
   build:
+  
+    name: Run Codeception Test
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
 
     - name: Install dependencies
       run:  composer install 
