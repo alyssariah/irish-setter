@@ -21,7 +21,7 @@ env:
         modules:
             enabled:
                 - WebDriver:
-                      url: https://arkh.com
+                      url:
                       browser: chrome
                       capabilities:
                           chromeOptions:
