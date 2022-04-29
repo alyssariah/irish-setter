@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "codeception": "./vendor/bin/codecept run",
+    "codecept": "./vendor/bin/codecept run",
     "codeception prod": "./vendor/bin/codecept run acceptance --env prod"
   },
   "repository": {
