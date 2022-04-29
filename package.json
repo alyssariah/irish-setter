@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "codeception": "./vendor/bin/codecept run",
+    "codeception prod": "./vendor/bin/codecept run acceptance --env prod"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
     "gulp-watch": "^5.0.1",
     "jest": "^28.0.2",
     "lazypipe": "^1.0.2",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "selenium-standalone": "^8.1.0"
   }
 }

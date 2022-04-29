@@ -1,0 +1,20 @@
+{% extends "_layouts/main.twig" %}
+
+{% block main %}
+    <header class="flex justify-between bg-black py-2 px-3" style="align-items: center; position: sticky; top: 0;">
+        <div class="text-white" style="font-size: 24px; display: flex; align-items: center; font-family: 'Syne'">
+            <span>THE IRISH BITCH</span>
+            {#            <img src="images/personal-space.jpg" class="inline mb-1 mx-2" style="width: 3rem; height: 3rem; border-radius: 50%" alt="River's face" />#}
+        </div>
+        {% include "_navigation/_entry.twig" %}
+    </header>
+    <div>
+        {#        <img src="images/river.jpg" style="width: 100%; max-height: 22rem">#}
+    </div>
+
+    <main class="flex justify-center w-full p-4">
+        <div>
+            <h1 class="my-3" style="font-size: 24px">About<h1>
+        </div>
+    </main>
+{% endblock %}

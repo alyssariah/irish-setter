@@ -7,7 +7,33 @@
 actor: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser:
-            url: https://arkh.com
+        - WebDriver:
+            url: https://irish-bitch.dev
+            browser: chrome
+            capabilities:
+                chromeOptions:
+                    args: ["--headless"]
         - \Helper\Acceptance
-step_decorators: ~        
+step_decorators: ~
+
+env:
+    prod:
+        modules:
+            enabled:
+                - WebDriver:
+                      url: https://arkh.com
+                      browser: chrome
+                      capabilities:
+                          chromeOptions:
+                              args: [ "--headless" ]
+                - \Helper\Acceptance
+    staging:
+        modules:
+            enabled:
+                - WebDriver:
+                      url: https://production.arkh.com
+                      browser: chrome
+                      capabilities:
+                          chromeOptions:
+                              args: [ "--headless" ]
+                - \Helper\Acceptance

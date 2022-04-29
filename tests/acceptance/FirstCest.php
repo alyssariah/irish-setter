@@ -2,18 +2,16 @@
 
 class FirstCest
 {
-    public function _before(AcceptanceTester $I)
-    {
-    }
-
-    // tests
-    public function tryToTest(AcceptanceTester $I)
-    {
-    }
-
-    public function frontpageWorks(AcceptanceTester $I)
+    public function aboutPageWorks(AcceptanceTester $I)
     {
         $I->amOnPage('/');
-        $I->see('Get the ARKH App');
+        $I->click('About');
+        $I->see('About');
+    }
+
+    public function frontPageWorks(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
+        $I->see('Welcome');
     }
 }

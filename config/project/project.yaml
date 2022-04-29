@@ -1,4 +1,4 @@
-dateModified: 1642689475
+dateModified: 1651180441
 email:
   fromEmail: admin@gmail.com
   fromName: 'Irish Bitch'
@@ -6,6 +6,7 @@ email:
 meta:
   __names__:
     1a083d97-75e7-4533-b0db-5ca553fb5389: Default # Default
+    1f9b0c40-700e-46bd-8c9e-fc3fdc0248aa: 'About page' # About page
     2bc52acb-3878-417a-8d58-08b62009df25: 'Home Image' # Home Image
     2ffc7e20-9595-43c8-b45a-8a9e783a3769: Common # Common
     5f56c352-d61d-4801-8e3e-742c8b197e96: 'Text Details' # Text Details
@@ -23,6 +24,7 @@ meta:
     a96e85d9-ac1c-4a2b-a0d0-68f6bd2b2417: 'Blog Content' # Blog Content
     ad8ea068-96be-4cc9-8890-6cec3a8cb753: 'Irish Bitch' # Irish Bitch
     c5cb90d3-fe08-4f5f-8aa6-abf6603f2709: Image # Image
+    ca8cffc8-de9e-4248-bb08-0ba412ac85e8: 'About page' # About page
     ccb78a3b-6b2b-4e17-8832-f08c2d54f694: 'Irish Bitch' # Irish Bitch
     e113b1d5-7070-413b-9a10-83c3596af81f: 'Home Page' # Home Page
     f6bcd899-17ff-4853-b989-19031fd45a68: Home # Home
@@ -35,7 +37,7 @@ system:
   edition: solo
   live: true
   name: 'Irish Bitch'
-  schemaVersion: 3.7.8
+  schemaVersion: 3.7.33
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
