@@ -10,7 +10,4 @@ modules:
     enabled:
         - \craft\test\Craft
         - \Helper\Functional
-        - Symfony
-        - Doctrine2:
-                depends: Symfony # connect to Symfony
     step_decorators: ~        

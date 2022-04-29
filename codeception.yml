@@ -5,19 +5,18 @@ paths:
     data: tests/_data
     support: tests/_support
     envs: tests/_envs
-settings:
-    bootstrap: _bootstrap.php
+bootstrap: _bootstrap.php
 params:
     - tests/.env
 modules:
     config:
         \craft\test\Craft:
             configFile: "tests/_craft/config/test.php"
-            entryUrl: "irish-bitch.dev"
+            entryUrl: "https://irish-bitch.dev"
             entryScript: 'index.php'
             projectConfig: {}
             migrations: []
             plugins: []
             cleanup: true
             transaction: true
-            dbSetup: { clean: false, setupCraft: false }
+            dbSetup: { clean: true, setupCraft: true }

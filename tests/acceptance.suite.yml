@@ -21,7 +21,7 @@ env:
         modules:
             enabled:
                 - WebDriver:
-                      url:
+                      url: https://irish-bitch.dev
                       browser: chrome
                       capabilities:
                           chromeOptions:
