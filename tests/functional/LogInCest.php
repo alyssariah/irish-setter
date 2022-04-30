@@ -1,5 +1,8 @@
 <?php
 
+namespace tests\functional;
+use FunctionalTester;
+
 class LogInCest
 {
     public function _before(FunctionalTester $I)
@@ -9,6 +12,7 @@ class LogInCest
     // tests
     public function tryToTest(FunctionalTester $I)
     {
-        $I->amGoingTo('start in the backend');
+        $I->amOnPage('/');
+        $I->see('Welcome');
     }
 }

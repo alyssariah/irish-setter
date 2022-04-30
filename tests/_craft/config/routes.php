@@ -19,5 +19,8 @@
  */
 
 return [
+    '/' => [
+        'template' => 'index.twig'
+    ],
 
 ];

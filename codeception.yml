@@ -12,8 +12,7 @@ modules:
     config:
         \craft\test\Craft:
             configFile: "tests/_craft/config/test.php"
-            entryUrl: "https://irish-bitch.dev"
-            entryScript: 'index.php'
+            entryUrl: "https://irish-bitch.dev/index.php"
             projectConfig: {}
             migrations: []
             plugins: []
