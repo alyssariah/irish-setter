@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: aboutPage
+name: 'About page'
+propagationMethod: all
+siteSettings:
+  ad8ea068-96be-4cc9-8890-6cec3a8cb753: # Irish Bitch
+    enabledByDefault: true
+    hasUrls: true
+    template: about/index
+    uriFormat: about-page
+type: single

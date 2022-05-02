@@ -1,17 +1,12 @@
 <nav class="top-bar" data-topbar role="navigation">
     <section class="top-bar-section">
-        {% set navEntries = craft.entries.section('navigation').all() %}
+        {% set navEntries = [{title: 'About', url: 'about-page'}, {title: 'Obedience', url: 'obedience'}, {title: 'Contact', url: 'contact'}] %}
         <ul class="right flex" style="justify-content: space-between">
-            {% nav entry in navEntries %}
-                <li class="{% if entry.hasDescendants() %}has-dropdown{% endif %}">
-                    <a href="{{ entry.url }}" class="text-white">{{ entry.title }}</a>
-                    {% ifchildren %}
-                        <ul class="dropdown text-white">
-                            {% children %}
-                        </ul>
-                    {% endifchildren %}	
+            {% for entry in navEntries %}
+                <li>
+                    <a href={{ entry.url }} class="text-white">{{ entry.title }}</a>
                 </li>
-            {% endnav %}
+            {% endfor %}
         </ul>
     </section>
 </nav>

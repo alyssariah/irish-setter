@@ -1,0 +1,39 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url: https://irish-bitch.dev
+            browser: chrome
+            capabilities:
+                chromeOptions:
+                    args: ["--headless"]
+        - \Helper\Acceptance
+step_decorators: ~
+
+env:
+    prod:
+        modules:
+            enabled:
+                - WebDriver:
+                      url: https://irish-bitch.dev
+                      browser: chrome
+                      capabilities:
+                          chromeOptions:
+                              args: [ "--headless" ]
+                - \Helper\Acceptance
+    staging:
+        modules:
+            enabled:
+                - WebDriver:
+                      url: https://production.arkh.com
+                      browser: chrome
+                      capabilities:
+                          chromeOptions:
+                              args: [ "--headless" ]
+                - \Helper\Acceptance
