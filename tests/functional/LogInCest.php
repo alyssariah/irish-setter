@@ -16,7 +16,7 @@ class LogInCest
         $I->see('Welcome');
     }
 
-    public function aboutPageWorks(AcceptanceTester $I)
+    public function aboutPageWorks(FunctionalTester $I)
     {
         $I->amOnPage('/');
         $I->click('About');
