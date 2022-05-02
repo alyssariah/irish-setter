@@ -20,6 +20,6 @@ class LogInCest
     {
         $I->amOnPage('/');
         $I->click('About');
-        $I->see('About');
+        $I->see('Uniform');
     }
 }
