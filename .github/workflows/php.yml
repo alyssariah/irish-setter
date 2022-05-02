@@ -46,32 +46,32 @@ jobs:
     env:
       PHP_EXTENSIONS: ctype,curl,dom,iconv,imagick,intl,json,mbstring,openssl,pcre,pdo,reflection,spl,zip
 
-  services:
-    name: set-up-services
+    services:
+      name: set-up-services
 
-    # Install Postgres
-    pgsql:
-      image: postgres:latest
-      env:
-        POSTGRES_USER: root
-        POSTGRES_PASSWORD: mysecretpassword
-        POSTGRES_DB: craft_test
-      ports:
-        - 5432:5432
-      # Set health checks to wait until Postgres has started
-      options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 3
+      # Install Postgres
+      pgsql:
+        image: postgres:latest
+        env:
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: mysecretpassword
+          POSTGRES_DB: craft_test
+        ports:
+          - 5432:5432
+        # Set health checks to wait until Postgres has started
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 3
 
-    # Install MySQL
-    mysql:
-      image: bitnami/mysql:latest
-      env:
-        MYSQL_ROOT_PASSWORD: mysecretpassword
-        MYSQL_DATABASE: craft_test
-        MYSQL_AUTHENTICATION_PLUGIN: mysql_native_password
-      # Set health checks to wait until mysql has started
-      options: --health-cmd="mysqladmin ping" --health-interval 10s --health-timeout 5s --health-retries 5
-      ports:
-        - 3306:3306
+      # Install MySQL
+      mysql:
+        image: bitnami/mysql:latest
+        env:
+          MYSQL_ROOT_PASSWORD: mysecretpassword
+          MYSQL_DATABASE: craft_test
+          MYSQL_AUTHENTICATION_PLUGIN: mysql_native_password
+        # Set health checks to wait until mysql has started
+        options: --health-cmd="mysqladmin ping" --health-interval 10s --health-timeout 5s --health-retries 5
+        ports:
+          - 3306:3306
 
     steps:
 
