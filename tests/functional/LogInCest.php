@@ -15,4 +15,11 @@ class LogInCest
         $I->amOnPage('/');
         $I->see('Welcome');
     }
+
+    public function aboutPageWorks(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
+        $I->click('About');
+        $I->see('About');
+    }
 }
