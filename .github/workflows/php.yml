@@ -40,7 +40,7 @@ jobs:
       matrix:
         operating-system: [ 'ubuntu-latest' ]
         php-versions: ["7.2", "7.3", "7.4", "8.0", "8.1"]
-        db: 'mysql'
+        db: ['mysql']
 
     name: PHP ${{ matrix.php-versions }} on ${{ matrix.db }}
     env:
